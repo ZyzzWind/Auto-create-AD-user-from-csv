@@ -28,7 +28,7 @@ Foreach($Utilisateur in $ADUsers){
                     -SamAccountName $UtilisateurConnect `
                     -UserPrincipalName "$UtilisateurNomMail@whatever.com" `
                     -EmailAddress "$UtilisateurNomMail@whatever.com" `
-                    -Path "OU=RCLUX,DC=RCLUX,DC=local" `
+                    -Path "OU=whatever,DC=whatever,DC=whatever" `
                     -AccountPassword(ConvertTo-SecureString $UtilisateurMotDePasse -AsPlainText -Force) `
                     -ChangePasswordAtLogon $true `
                     -Enabled $true 
